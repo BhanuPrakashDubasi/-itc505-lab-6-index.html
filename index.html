@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Sorting Page, on Click the number changes</h1>
+    </header>
+
+    <!-- Menu Side-Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>Number Sorting</h2>
+        <p>Click the button below to generate random numbers and sort them in ascending and descending order:</p>
+        <button onclick="generateAndSortNumbers()">Generate & Sort Numbers</button>
+        <div id="numbers"></div>
+    </main>
+
+    <!-- Advertisement -->
+    <aside>
+        <a href="https://www.amazon.com/EKLENTSON-Jackets-Thermal-Winter-Fleece/dp/B09L4N3BD7/ref=sr_1_6?crid=3NA7MKT8ATF0D&dib=eyJ2IjoiMSJ9.CY9kJMhpqBYbVzsXhZtlhWrKnhXxRNOCdh0QOzzGWX0UsP7Uy9KFFDpskEiqAqHe2ObGCoXxzOjASNi0OL0aDBMu9cXFTgJYsvy2yMgaU2Amr33-zylife6I-KWfiX8kx1mpmGROOE-zhm45VSiznNlf1_U2_SqPSRelvn3AKHLWWrBXRHVdjhwQHQy24N18OyAgAKem9KLF-ku-WAmLcLFXLXoDQXw4Mj47DtILuE3lpyIxBIgj98fj3SY6zoyuAQjuu_UkEkWv3QowAB8HMRBy9BKsXeQuRORvTfy2Jrs.l56GZoTHDfc2Dxuy1aG5yDeGyY9oPz22L3nRv2AeGcc&dib_tag=se&keywords=jackets+for+men&qid=1731008742&sprefix=jackets%2Caps%2C139&sr=8-6" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/71Wbn0u1sQL._AC_SX466_.jpg" alt="Product Advertisement">
+        </a>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p>Addendum: This page demonstrates a CSS grid-based Holy Grail Layout with interactive JavaScript sorting functionality. Elements used include:
+        <ul>
+            <li><strong>Header</strong>: Contains the page title.</li>
+            <li><strong>Menu Side-Bar</strong>: Provides placeholder links to other sections.</li>
+            <li><strong>Main Content</strong>: Holds the JavaScript-generated random numbers and sorting functionality.</li>
+            <li><strong>Advertisement</strong>: A clickable image linking to an Amazon page.</li>
+            <li><strong>Footer</strong>: Displays the last modified date and an addendum explaining page elements and functionality.</li>
+        </ul>
+        Colors are applied to various sections for enhanced visual appeal and differentiation.</p>
+    </footer>
+    
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+
+</body>
+</html>
